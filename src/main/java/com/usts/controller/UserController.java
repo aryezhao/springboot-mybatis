@@ -90,10 +90,20 @@ public class UserController {
      * 整合mybatis
      * @return
      */
-    @RequestMapping("find")
+    //@RequestMapping("find")
     public List<User> findAll(){
         List<User> list = userService.findAll();
 
         return list;
+    }
+
+    /**
+     * 整合mybatis
+     * @return
+     */
+    @RequestMapping("redis")
+    public String findRedis(){
+        String redis = userService.findRedis();
+        return redis;
     }
 }

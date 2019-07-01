@@ -53,6 +53,11 @@ spring boot 父节点依赖,引入这个之后相关的引入就不需要添加v
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-starter-web</artifactId>
     </dependency>
+    <!--添加redis依赖-->
+    <dependency>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-redis</artifactId>
+    </dependency>
 
     <dependency>
       <groupId>junit</groupId>

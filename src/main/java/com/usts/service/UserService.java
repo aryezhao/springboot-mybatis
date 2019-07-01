@@ -15,4 +15,10 @@ public interface UserService {
      * @return
      */
     List<User> findAll();
+
+    /**
+     * 查询Redis集群服务
+     * @return
+     */
+    String findRedis();
 }
